@@ -1,0 +1,36 @@
+{
+    "name": "recca0120/video-finder",
+    "description": "",
+    "authors": [{
+        "name": "recca0120",
+        "email": "recca0120@gmail.com"
+    }],
+    "require": {
+        "guzzlehttp/psr7": "^1.4",
+        "php-http/discovery": "^1.4",
+        "php-http/guzzle6-adapter": "^1.1",
+        "php-http/message": "^1.7",
+        "symfony/dom-crawler": "^3.0|^4.0",
+        "symfony/css-selector": "^3.0|^4.0",
+        "illuminate/filesystem": "^5.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~6.0",
+        "friendsofphp/php-cs-fixer": "^2.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Recca0120\\VideoFinder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Recca0120\\VideoFinder\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "fix": "vendor/bin/php-cs-fixer fix src;vendor/bin/php-cs-fixer fix tests",
+        "test": "vendor/bin/phpunit"
+    }
+}
